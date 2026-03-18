@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende PHP desde cero con nuestra guía completa. Tutoriales, ejemplos prácticos y ejercicios.">
+    <meta name="author" content="Isaac Esteban Haro Torres">
+    <title>🐘 PHP Desde Cero - Guía Completa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">🐘 PHP Desde Cero</a>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#contenido">Contenido</a></li>
+                    <li><a href="#ejemplos">Ejemplos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>🐘 PHP Desde Cero - Guía Completa</h1>
+                <p class="hero-subtitle">Aprende PHP desde los fundamentos hasta conceptos avanzados</p>
+                <blockquote class="hero-quote">
+                    "PHP powers 77% of all websites whose server-side programming language we know."
+                </blockquote>
+                <a href="#temas" class="btn btn-primary">Explorar Temas</a>
+            </div>
+        </section>
+
+        <section id="temas" class="topics">
+            <div class="container">
+                <h2>📖 Temas del Curso</h2>
+                <p class="topics-intro">Haz clic en cualquier tema para ver el contenido detallado</p>
+
+                <div class="topics-grid">
+                    <!-- Módulo 1 -->
+                    <div class="topic-card" data-topic="topic1">
+                        <div class="topic-header">
+                            <span class="topic-icon">📌</span>
+                            <h3>Módulo 1: Fundamentos</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema1-1">Introducción a PHP</a></li>
+                            <li><a href="#tema1-2">Instalación y configuración</a></li>
+                            <li><a href="#tema1-3">Sintaxis básica</a></li>
+                            <li><a href="#tema1-4">Variables y tipos de datos</a></li>
+                        </ul>
+                        <a href="#tema1-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <!-- Módulo 2 -->
+                    <div class="topic-card" data-topic="topic2">
+                        <div class="topic-header">
+                            <span class="topic-icon">⚙️</span>
+                            <h3>Módulo 2: Intermedio</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema2-1">Funciones y scope</a></li>
+                            <li><a href="#tema2-2">Arrays y funciones de array</a></li>
+                            <li><a href="#tema2-3">Formularios y sesiones</a></li>
+                            <li><a href="#tema2-4">PDO y bases de datos</a></li>
+                        </ul>
+                        <a href="#tema2-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <!-- Módulo 3 -->
+                    <div class="topic-card" data-topic="topic3">
+                        <div class="topic-header">
+                            <span class="topic-icon">🚀</span>
+                            <h3>Módulo 3: Avanzado</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema3-1">Programación orientada a objetos</a></li>
+                            <li><a href="#tema3-2">MVC pattern</a></li>
+                            <li><a href="#tema3-3">APIs REST</a></li>
+                            <li><a href="#tema3-4">Laravel / Symfony</a></li>
+                        </ul>
+                        <a href="#tema3-1" class="btn-topic">Ver tema →</a>
+                    </div>
+                </div>
+
+                <!-- Contenido Detallado de Temas -->
+                <div class="topic-content" id="topic-content">
+                    <!-- Tema 1-1 -->
+                    <div class="content-detail" id="tema1-1">
+                        <h3>📌 Introducción a PHP</h3>
+                        <div class="content-body">
+                            <p><strong>¿Qué es PHP?</strong> PHP (Hypertext Preprocessor) es un lenguaje de scripting de código abierto ampliamente utilizado para el desarrollo web del lado del servidor. Fue creado por Rasmus Lerdorf en 1994 y ha evolucionado hasta convertirse en uno de los lenguajes más populares para crear sitios web dinámicos.</p>
+
+                            <h4>Características principales:</h4>
+                            <ul>
+                                <li><strong>Código abierto:</strong> Gratuito y con una gran comunidad</li>
+                                <li><strong>Multiplataforma:</strong> Funciona en Windows, Linux, macOS</li>
+                                <li><strong>Fácil aprendizaje:</strong> Sintaxis sencilla similar a C y Perl</li>
+                                <li><strong>Base de datos:</strong> Soporte nativo para MySQL, PostgreSQL, SQLite</li>
+                            </ul>
+
+                            <h4>Estadísticas de uso:</h4>
+                            <table class="info-table">
+                                <tr>
+                                    <th>Métrica</th>
+                                    <th>Valor</th>
+                                </tr>
+                                <tr>
+                                    <td>Sitios web que usan PHP</td>
+                                    <td>77.4%</td>
+                                </tr>
+                                <tr>
+                                    <td>Version más usada</td>
+                                    <td>PHP 8.x</td>
+                                </tr>
+                                <tr>
+                                    <td>Lanzamiento inicial</td>
+                                    <td>1995</td>
+                                </tr>
+                            </table>
+
+                            <div class="info-box">
+                                <strong>💡 Dato curioso:</strong> PHP originalmente significaba "Personal Home Page" y era una colección de scripts CGI escritos en Perl.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 1-2 -->
+                    <div class="content-detail" id="tema1-2">
+                        <h3>🔧 Instalación y Configuración</h3>
+                        <div class="content-body">
+                            <h4>En Windows con XAMPP:</h4>
+                            <ol>
+                                <li>Descarga XAMPP desde <a href="https://www.apachefriends.org/" target="_blank">apachefriends.org</a></li>
+                                <li>Ejecuta el instalador y selecciona los componentes</li>
+                                <li>Instala en C:\xampp (recomendado)</li>
+                                <li>Inicia el panel de control y arranca Apache y MySQL</li>
+                                <li>Accede a <a href="http://localhost" target="_blank">http://localhost</a> para verificar</li>
+                            </ol>
+
+                            <h4>En Linux (Ubuntu/Debian):</h4>
+                            <pre><code># Actualizar repositorios
+sudo apt update
+
+# Instalar PHP y extensiones
+sudo apt install php libapache2-mod-php php-mysql php-cli php-curl php-gd php-mbstring
+
+# Verificar instalación
+php --version
+
+# Reiniciar Apache
+sudo systemctl restart apache2</code></pre>
+
+                            <h4>En macOS con Homebrew:</h4>
+                            <pre><code># Instalar Homebrew (si no lo tienes)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Instalar PHP
+brew install php
+
+# Verificar instalación
+php --version</code></pre>
+
+                            <h4>Configuración de php.ini:</h4>
+                            <pre><code>; Habilitar display_errors (solo desarrollo)
+display_errors = On
+
+; Zona horaria
+date.timezone = "America/New_York"
+
+; Límite de memoria
+memory_limit = 256M
+
+; Tamaño máximo de subida
+upload_max_filesize = 20M
+post_max_size = 20M</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 1-3 -->
+                    <div class="content-detail" id="tema1-3">
+                        <h3>📚 Sintaxis Básica</h3>
+                        <div class="content-body">
+                            <h4>Estructura de un archivo PHP:</h4>
+                            <pre><code>&lt;?php
+// Tu código PHP va aquí
+echo "Hola Mundo!";
+?&gt;</code></pre>
+
+                            <h4>Comentarios:</h4>
+                            <pre><code>&lt;?php
+// Comentario de una línea
+
+# También comentario de una línea
+
+/*
+    Comentario
+    de múltiples
+    líneas
+*/
+?&gt;</code></pre>
+
+                            <h4>Salida de datos:</h4>
+                            <pre><code>&lt;?php
+echo "Hola Mundo";           // Imprime texto
+print "Hola";                // Similar a echo
+print_r($array);             // Imprime arrays
+var_dump($variable);         // Muestra tipo y valor
+?&gt;</code></pre>
+
+                            <h4>Diferencias entre echo y print:</h4>
+                            <table class="info-table">
+                                <tr>
+                                    <th>Característica</th>
+                                    <th>echo</th>
+                                    <th>print</th>
+                                </tr>
+                                <tr>
+                                    <td>Velocidad</td>
+                                    <td>Más rápido</td>
+                                    <td>Un poco más lento</td>
+                                </tr>
+                                <tr>
+                                    <td>Retorno</td>
+                                    <td>Void</td>
+                                    <td>1 (true)</td>
+                                </tr>
+                                <tr>
+                                    <td>Parámetros</td>
+                                    <td>Múltiples</td>
+                                    <td>Uno solo</td>
+                                </tr>
+                            </table>
+
+                            <div class="info-box">
+                                <strong>💡 Tip:</strong> Siempre cierra tus archivos PHP con <code>?&gt;</code> solo si vas a mezclar HTML. Para archivos puramente PHP, omite el cierre para evitar espacios en blanco accidentales.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 1-4 -->
+                    <div class="content-detail" id="tema1-4">
+                        <h3>📦 Variables y Tipos de Datos</h3>
+                        <div class="content-body">
+                            <h4>Declaración de variables:</h4>
+                            <pre><code>&lt;?php
+$nombre = "Juan";           // String
+$edad = 30;                 // Integer
+$altura = 1.75;             // Float
+$activo = true;             // Boolean
+$nulo = null;               // Null
+
+// Variables variables
+$nombre_var = "ciudad";
+$$nombre_var = "Madrid";    // $ciudad = "Madrid"
+?&gt;</code></pre>
+
+                            <h4>Tipos de datos escalares:</h4>
+                            <pre><code>&lt;?php
+// Boolean
+$verdadero = true;
+$falso = false;
+
+// Integer
+$entero = 42;
+$negativo = -10;
+$hex = 0x1A;        // 26 en decimal
+$bin = 0b1010;      // 10 en decimal
+
+// Float
+$decimal = 3.14;
+$cientifico = 1.2e3;  // 1200
+
+// String
+$texto = 'Hola';
+$nombre = "Juan";
+$heredoc = &lt;&lt;&lt;EOT
+Texto multilínea
+con variables $nombre
+EOT;
+?&gt;</code></pre>
+
+                            <h4>Tipos de datos compuestos:</h4>
+                            <pre><code>&lt;?php
+// Array indexado
+$frutas = ["manzana", "banana", "naranja"];
+
+// Array asociativo
+$persona = [
+    "nombre" => "Juan",
+    "edad" => 30,
+    "ciudad" => "Madrid"
+];
+
+// Array multidimensional
+$matriz = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+?&gt;</code></pre>
+
+                            <h4>Constantes:</h4>
+                            <pre><code>&lt;?php
+// Usando define()
+define("PI", 3.1416);
+define("NOMBRE_SITIO", "Mi Web");
+
+// Usando const (más rápido)
+const VERSION = "1.0.0";
+
+// Constantes predefinidas
+echo PHP_VERSION;
+echo PHP_OS;
+?&gt;</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 2-1 -->
+                    <div class="content-detail" id="tema2-1">
+                        <h3>🔷 Funciones y Scope</h3>
+                        <div class="content-body">
+                            <h4>Declaración de funciones:</h4>
+                            <pre><code>&lt;?php
+// Función básica
+function saludar() {
+    echo "Hola!";
+}
+
+// Función con parámetros
+function saludarPersona($nombre) {
+    echo "Hola $nombre!";
+}
+
+// Función con valor por defecto
+function saludar($nombre = "Invitado") {
+    echo "Hola $nombre!";
+}
+
+// Función con retorno
+function sumar($a, $b) {
+    return $a + $b;
+}
+
+// Tipado de parámetros y retorno (PHP 7+)
+function multiplicar(int $a, int $b): int {
+    return $a * $b;
+}
+?&gt;</code></pre>
+
+                            <h4>Arrow functions (PHP 7.4+):</h4>
+                            <pre><code>&lt;?php
+// Sintaxis tradicional
+$cuadrado = function($x) {
+    return $x ** 2;
+};
+
+// Arrow function
+$cuadrado = fn($x) => $x ** 2;
+
+// Con tipos
+$multiplicar = fn(int $a, int $b): int => $a * $b;
+?&gt;</code></pre>
+
+                            <h4>Scope de variables:</h4>
+                            <pre><code>&lt;?php
+$global = "Soy global";
+
+function test() {
+    // $global no es accesible aquí
+    global $global;  // Importar variable global
+    echo $global;
+    
+    // Alternativa con $GLOBALS
+    echo $GLOBALS['global'];
+}
+
+// Variable estática
+function contador() {
+    static $count = 0;
+    $count++;
+    echo $count;
+}
+
+contador();  // 1
+contador();  // 2
+?&gt;</code></pre>
+
+                            <h4>Funciones variádicas:</h4>
+                            <pre><code>&lt;?php
+// Usando ... (PHP 5.6+)
+function sumar(...$numeros) {
+    return array_sum($numeros);
+}
+
+echo sumar(1, 2, 3, 4);  // 10
+
+// Desestructuración
+function operar($operacion, ...$valores) {
+    // $valores es un array
+}
+?&gt;</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 2-2 -->
+                    <div class="content-detail" id="tema2-2">
+                        <h3>📊 Arrays y Funciones de Array</h3>
+                        <div class="content-body">
+                            <h4>Creación y acceso:</h4>
+                            <pre><code>&lt;?php
+// Array indexado
+$frutas = ["manzana", "banana", "naranja"];
+echo $frutas[0];  // manzana
+
+// Array asociativo
+$persona = [
+    "nombre" => "Juan",
+    "edad" => 30
+];
+echo $persona["nombre"];  // Juan
+
+// Agregar elementos
+$frutas[] = "pera";
+array_push($frutas, "uva");
+
+// Eliminar elementos
+unset($frutas[0]);
+array_pop($frutas);  // Último
+array_shift($frutas); // Primero
+?&gt;</code></pre>
+
+                            <h4>Funciones útiles de array:</h4>
+                            <pre><code>&lt;?php
+$nums = [1, 2, 3, 4, 5];
+
+// Información
+count($nums);           // 5
+in_array(3, $nums);     // true
+array_key_exists(0, $nums); // true
+
+// Búsqueda
+array_search(3, $nums); // 2
+array_find($nums, fn($n) => $n > 3); // PHP 8.3+
+
+// Transformación
+array_map(fn($n) => $n * 2, $nums);
+array_filter($nums, fn($n) => $n > 2);
+array_reduce($nums, fn($c, $n) => $c + $n, 0);
+
+// Ordenamiento
+sort($nums);           // Ascendente
+rsort($nums);          // Descendente
+asort($persona);       // Por valor
+ksort($persona);       // Por clave
+?&gt;</code></pre>
+
+                            <h4>Iteración de arrays:</h4>
+                            <pre><code>&lt;?php
+$frutas = ["manzana", "banana", "naranja"];
+
+// foreach tradicional
+foreach ($frutas as $fruta) {
+    echo $fruta;
+}
+
+// foreach con clave
+foreach ($frutas as $indice => $fruta) {
+    echo "$indice: $fruta";
+}
+
+// while con each (obsoleto en PHP 7.2+)
+reset($frutas);
+while ($par = each($frutas)) {
+    echo $par['value'];
+}
+
+// Usando Iterator
+$iterador = new ArrayIterator($frutas);
+?&gt;</code></pre>
+
+                            <div class="info-box">
+                                <strong>💡 Tip:</strong> Para arrays grandes, considera usar <code>yield</code> para crear generadores y ahorrar memoria.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 2-3 -->
+                    <div class="content-detail" id="tema2-3">
+                        <h3>📝 Formularios y Sesiones</h3>
+                        <div class="content-body">
+                            <h4>Manejo de formularios:</h4>
+                            <pre><code>&lt;?php
+// Método POST
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = $_POST['nombre'] ?? '';
+    $email = $_POST['email'] ?? '';
+    
+    // Sanitización
+    $nombre = htmlspecialchars(trim($nombre));
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+    
+    // Validación
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error = "Email inválido";
+    }
+}
+?&gt;
+
+&lt;form method="POST" action=""&gt;
+    &lt;input type="text" name="nombre" required&gt;
+    &lt;input type="email" name="email" required&gt;
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+                            <h4>Sesiones:</h4>
+                            <pre><code>&lt;?php
+// Iniciar sesión (debe ser lo primero)
+session_start();
+
+// Guardar datos en sesión
+$_SESSION['usuario'] = 'juan';
+$_SESSION['id'] = 123;
+
+// Leer datos
+$usuario = $_SESSION['usuario'] ?? null;
+
+// Eliminar un dato
+unset($_SESSION['usuario']);
+
+// Destruir sesión completa
+session_destroy();
+
+// Regenerar ID (seguridad)
+session_regenerate_id(true);
+?&gt;</code></pre>
+
+                            <h4>Cookies:</h4>
+                            <pre><code>&lt;?php
+// Establecer cookie (1 hora)
+setcookie('usuario', 'juan', time() + 3600, '/');
+
+// Cookie segura (HTTPS only)
+setcookie('token', 'abc123', [
+    'expires' => time() + 3600,
+    'path' => '/',
+    'domain' => 'tudominio.com',
+    'secure' => true,
+    'httponly' => true,
+    'samesite' => 'Strict'
+]);
+
+// Leer cookie
+$usuario = $_COOKIE['usuario'] ?? null;
+
+// Eliminar cookie
+setcookie('usuario', '', time() - 3600, '/');
+?&gt;</code></pre>
+
+                            <h4>Seguridad en formularios:</h4>
+                            <pre><code>&lt;?php
+// Token CSRF
+session_start();
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
+// En el formulario
+echo '&lt;input type="hidden" name="csrf_token" value="' . $_SESSION['csrf_token'] . '"&gt;';
+
+// Validar al recibir
+if (!hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
+    die('Token CSRF inválido');
+}
+?&gt;</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 2-4 -->
+                    <div class="content-detail" id="tema2-4">
+                        <h3>🗄️ PDO y Bases de Datos</h3>
+                        <div class="content-body">
+                            <h4>Conexión con PDO:</h4>
+                            <pre><code>&lt;?php
+$dsn = 'mysql:host=localhost;dbname=mibd;charset=utf8mb4';
+$usuario = 'root';
+$password = '';
+
+$options = [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES => false,
+];
+
+try {
+    $pdo = new PDO($dsn, $usuario, $password, $options);
+} catch (PDOException $e) {
+    throw new PDOException($e->getMessage(), (int)$e->getCode());
+}
+?&gt;</code></pre>
+
+                            <h4>Consultas preparadas (CRUD):</h4>
+                            <pre><code>&lt;?php
+// CREATE
+$stmt = $pdo->prepare("INSERT INTO usuarios (nombre, email) VALUES (:nombre, :email)");
+$stmt->execute(['nombre' => 'Juan', 'email' => 'juan@email.com']);
+$id = $pdo->lastInsertId();
+
+// READ
+$stmt = $pdo->prepare("SELECT * FROM usuarios WHERE id = :id");
+$stmt->execute(['id' => 1]);
+$usuario = $stmt->fetch();
+
+// READ múltiple
+$stmt = $pdo->query("SELECT * FROM usuarios");
+$usuarios = $stmt->fetchAll();
+
+// UPDATE
+$stmt = $pdo->prepare("UPDATE usuarios SET email = :email WHERE id = :id");
+$stmt->execute(['email' => 'nuevo@email.com', 'id' => 1]);
+
+// DELETE
+$stmt = $pdo->prepare("DELETE FROM usuarios WHERE id = :id");
+$stmt->execute(['id' => 1]);
+?&gt;</code></pre>
+
+                            <h4>Transacciones:</h4>
+                            <pre><code>&lt;?php
+try {
+    $pdo->beginTransaction();
+    
+    $stmt = $pdo->prepare("INSERT INTO pedidos (usuario_id, total) VALUES (:uid, :total)");
+    $stmt->execute(['uid' => 1, 'total' => 100]);
+    
+    $stmt = $pdo->prepare("UPDATE usuarios SET saldo = saldo - :total WHERE id = :uid");
+    $stmt->execute(['total' => 100, 'uid' => 1]);
+    
+    $pdo->commit();
+} catch (Exception $e) {
+    $pdo->rollBack();
+    echo "Error: " . $e->getMessage();
+}
+?&gt;</code></pre>
+
+                            <div class="info-box">
+                                <strong>⚠️ Importante:</strong> Siempre usa consultas preparadas para prevenir inyección SQL. Nunca concatenes variables directamente en las consultas.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 3-1 -->
+                    <div class="content-detail" id="tema3-1">
+                        <h3>🏗️ Programación Orientada a Objetos</h3>
+                        <div class="content-body">
+                            <h4>Clases y objetos:</h4>
+                            <pre><code>&lt;?php
+class Persona {
+    // Propiedades
+    private string $nombre;
+    private int $edad;
+    
+    // Constructor
+    public function __construct(string $nombre, int $edad) {
+        $this->nombre = $nombre;
+        $this->edad = $edad;
+    }
+    
+    // Métodos
+    public function saludar(): string {
+        return "Hola, soy {$this->nombre}";
+    }
+    
+    // Getters y Setters
+    public function getNombre(): string {
+        return $this->nombre;
+    }
+    
+    public function setNombre(string $nombre): void {
+        $this->nombre = $nombre;
+    }
+}
+
+// Uso
+$juan = new Persona("Juan", 30);
+echo $juan->saludar();
+?&gt;</code></pre>
+
+                            <h4>Herencia:</h4>
+                            <pre><code>&lt;?php
+class Empleado extends Persona {
+    private float $salario;
+    
+    public function __construct(string $nombre, int $edad, float $salario) {
+        parent::__construct($nombre, $edad);
+        $this->salario = $salario;
+    }
+    
+    public function trabajar(): string {
+        return "{$this->getNombre()} está trabajando";
+    }
+}
+?&gt;</code></pre>
+
+                            <h4>Interfaces y clases abstractas:</h4>
+                            <pre><code>&lt;?php
+interface Hablador {
+    public function hablar(): string;
+}
+
+abstract class Animal {
+    abstract public function hacerSonido(): string;
+}
+
+class Perro extends Animal implements Hablador {
+    public function hacerSonido(): string {
+        return "Guau!";
+    }
+    
+    public function hablar(): string {
+        return "Soy un perro";
+    }
+}
+?&gt;</code></pre>
+
+                            <h4>Traits:</h4>
+                            <pre><code>&lt;?php
+trait Loggable {
+    public function log(string $mensaje): void {
+        echo "[LOG]: $mensaje";
+    }
+}
+
+class Usuario {
+    use Loggable;
+}
+
+$usuario = new Usuario();
+$usuario->log("Usuario creado");
+?&gt;</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 3-2 -->
+                    <div class="content-detail" id="tema3-2">
+                        <h3>🏛️ MVC Pattern</h3>
+                        <div class="content-body">
+                            <h4>Estructura MVC:</h4>
+                            <pre><code>/app
+├── controllers/
+│   └── UsuarioController.php
+├── models/
+│   └── Usuario.php
+├── views/
+│   └── usuarios/
+│       └── index.php
+└── core/
+    ├── Database.php
+    └── Controller.php</code></pre>
+
+                            <h4>Modelo:</h4>
+                            <pre><code>&lt;?php
+class Usuario {
+    private $db;
+    
+    public function __construct() {
+        $this->db = Database::getInstance();
+    }
+    
+    public function getAll(): array {
+        $this->db->query("SELECT * FROM usuarios");
+        return $this->db->fetchAll();
+    }
+    
+    public function getById(int $id): ?array {
+        $this->db->query("SELECT * FROM usuarios WHERE id = :id");
+        $this->db->bind(':id', $id);
+        return $this->db->fetch();
+    }
+}
+?&gt;</code></pre>
+
+                            <h4>Controlador:</h4>
+                            <pre><code>&lt;?php
+class UsuarioController extends Controller {
+    private $usuarioModel;
+    
+    public function __construct() {
+        $this->usuarioModel = $this->model('Usuario');
+    }
+    
+    public function index() {
+        $usuarios = $this->usuarioModel->getAll();
+        $this->view('usuarios/index', ['usuarios' => $usuarios]);
+    }
+    
+    public function show(int $id) {
+        $usuario = $this->usuarioModel->getById($id);
+        $this->view('usuarios/show', ['usuario' => $usuario]);
+    }
+}
+?&gt;</code></pre>
+
+                            <h4>Vista:</h4>
+                            <pre><code>&lt;!-- views/usuarios/index.php --&gt;
+&lt;h1&gt;Lista de Usuarios&lt;/h1&gt;
+&lt;ul&gt;
+    &lt;?php foreach ($usuarios as $usuario): ?&gt;
+        &lt;li&gt;&lt;?= htmlspecialchars($usuario['nombre']) ?&gt;&lt;/li&gt;
+    &lt;?php endforeach; ?&gt;
+&lt;/ul&gt;</code></pre>
+
+                            <div class="info-box">
+                                <strong>💡 Beneficios de MVC:</strong> Separación de responsabilidades, código más mantenible, fácil testing, reutilización de componentes.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 3-3 -->
+                    <div class="content-detail" id="tema3-3">
+                        <h3>🌐 APIs REST</h3>
+                        <div class="content-body">
+                            <h4>API REST básica:</h4>
+                            <pre><code>&lt;?php
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
+
+$method = $_SERVER['REQUEST_METHOD'];
+$endpoint = $_GET['endpoint'] ?? '';
+
+switch ($method) {
+    case 'GET':
+        getUsers($endpoint);
+        break;
+    case 'POST':
+        createUser();
+        break;
+    case 'PUT':
+        updateUser($endpoint);
+        break;
+    case 'DELETE':
+        deleteUser($endpoint);
+        break;
+    default:
+        http_response_code(405);
+        echo json_encode(['error' => 'Method not allowed']);
+}
+
+function getUsers($endpoint) {
+    if ($endpoint) {
+        // Obtener usuario específico
+        $usuario = ['id' => $endpoint, 'nombre' => 'Juan'];
+        echo json_encode($usuario);
+    } else {
+        // Listar todos
+        $usuarios = [
+            ['id' => 1, 'nombre' => 'Juan'],
+            ['id' => 2, 'nombre' => 'Maria']
+        ];
+        echo json_encode($usuarios);
+    }
+}
+?&gt;</code></pre>
+
+                            <h4>Autenticación con JWT:</h4>
+                            <pre><code>&lt;?php
+use Firebase\JWT\JWT;
+
+// Generar token
+function generarToken($usuario) {
+    $payload = [
+        'iat' => time(),
+        'exp' => time() + 3600,
+        'data' => $usuario
+    ];
+    
+    return JWT::encode($payload, 'TU_CLAVE_SECRETA', 'HS256');
+}
+
+// Verificar token
+function verificarToken($token) {
+    try {
+        return JWT::decode($token, 'TU_CLAVE_SECRETA', ['HS256']);
+    } catch (Exception $e) {
+        return null;
+    }
+}
+
+// Middleware de autenticación
+function authMiddleware() {
+    $headers = getallheaders();
+    $authHeader = $headers['Authorization'] ?? '';
+    
+    if (preg_match('/Bearer\s+(.*)/', $authHeader, $matches)) {
+        $token = $matches[1];
+        $payload = verificarToken($token);
+        
+        if ($payload) {
+            return $payload->data;
+        }
+    }
+    
+    http_response_code(401);
+    exit(json_encode(['error' => 'Unauthorized']));
+}
+?&gt;</code></pre>
+
+                            <h4>Respuestas HTTP:</h4>
+                            <pre><code>&lt;?php
+// 200 OK
+http_response_code(200);
+echo json_encode(['success' => true, 'data' => $data]);
+
+// 201 Created
+http_response_code(201);
+echo json_encode(['success' => true, 'message' => 'Recurso creado']);
+
+// 400 Bad Request
+http_response_code(400);
+echo json_encode(['success' => false, 'error' => 'Datos inválidos']);
+
+// 404 Not Found
+http_response_code(404);
+echo json_encode(['success' => false, 'error' => 'Recurso no encontrado']);
+
+// 500 Internal Server Error
+http_response_code(500);
+echo json_encode(['success' => false, 'error' => 'Error interno']);
+?&gt;</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+
+                    <!-- Tema 3-4 -->
+                    <div class="content-detail" id="tema3-4">
+                        <h3>🎯 Laravel / Symfony</h3>
+                        <div class="content-body">
+                            <h4>Laravel - Instalación:</h4>
+                            <pre><code># Instalar Laravel Installer
+composer global require laravel/installer
+
+# Crear nuevo proyecto
+laravel new mi-proyecto
+
+# O con Composer
+composer create-project laravel/laravel mi-proyecto
+
+# Servidor de desarrollo
+cd mi-proyecto
+php artisan serve</code></pre>
+
+                            <h4>Laravel - Estructura:</h4>
+                            <pre><code>/app
+├── Http/
+│   ├── Controllers/
+│   └── Middleware/
+├── Models/
+├── Providers/
+└── ...
+/database
+├── migrations/
+├── seeders/
+└── factories/
+/resources
+├── views/
+└── css/
+/routes
+└── web.php</code></pre>
+
+                            <h4>Laravel - Rutas y Controladores:</h4>
+                            <pre><code>// routes/web.php
+Route::get('/', [HomeController::class, 'index']);
+Route::resource('usuarios', UsuarioController::class);
+
+// app/Http/Controllers/UsuarioController.php
+class UsuarioController extends Controller {
+    public function index() {
+        $usuarios = Usuario::all();
+        return view('usuarios.index', compact('usuarios'));
+    }
+    
+    public function store(Request $request) {
+        $validated = $request->validate([
+            'nombre' => 'required|string|max:255',
+            'email' => 'required|email|unique:usuarios'
+        ]);
+        
+        Usuario::create($validated);
+        return redirect()->route('usuarios.index');
+    }
+}</code></pre>
+
+                            <h4>Symfony - Instalación:</h4>
+                            <pre><code># Instalar Symfony CLI
+curl -sS https://get.symfony.com/cli/installer | bash
+
+# Crear proyecto
+symfony new mi-proyecto --webapp
+
+# Servidor de desarrollo
+symfony serve</code></pre>
+
+                            <h4>Symfony - Controlador:</h4>
+                            <pre><code>// src/Controller/UsuarioController.php
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
+class UsuarioController extends AbstractController {
+    #[Route('/usuarios', name: 'usuarios_index')]
+    public function index(): Response {
+        $usuarios = $this->getDoctrine()
+            ->getRepository(Usuario::class)
+            ->findAll();
+            
+        return $this->render('usuarios/index.html.twig', [
+            'usuarios' => $usuarios
+        ]);
+    }
+}</code></pre>
+
+                            <div class="info-box">
+                                <strong>💡 Comparación:</strong> Laravel es más opinado y tiene más características out-of-the-box. Symfony es más modular y flexible, ideal para proyectos enterprise.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contenido" class="content">
+            <div class="container">
+                <h2>📚 Contenido del Curso</h2>
+
+                <div class="modules">
+                    <div class="module">
+                        <h3>Módulo 1: Fundamentos</h3>
+                        <ul>
+                            <li>Introducción a PHP</li>
+                            <li>Instalación y configuración</li>
+                            <li>Sintaxis básica</li>
+                            <li>Variables y tipos de datos</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+
+                    <div class="module">
+                        <h3>Módulo 2: Intermedio</h3>
+                        <ul>
+                            <li>Funciones y scope</li>
+                            <li>Arrays y funciones de array</li>
+                            <li>Formularios y sesiones</li>
+                            <li>PDO y bases de datos</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+
+                    <div class="module">
+                        <h3>Módulo 3: Avanzado</h3>
+                        <ul>
+                            <li>Programación orientada a objetos</li>
+                            <li>MVC pattern</li>
+                            <li>APIs REST</li>
+                            <li>Laravel / Symfony</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ejemplos" class="examples">
+            <div class="container">
+                <h2>📝 Ejemplos Rápidos</h2>
+
+                <div class="code-block">
+                    <h3>Variables y Tipos</h3>
+                    <pre><code class="language-php">&lt;?php
+$nombre = "Juan";
+$edad = 30;
+$altura = 1.75;
+$esEstudiante = true;
+$hobbies = ["leer", "codificar"];
+$persona = ["nombre" => $nombre, "edad" => $edad];
+?&gt;</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <h3>Funciones</h3>
+                    <pre><code class="language-php">&lt;?php
+function saludar($nombre) {
+    return "Hola $nombre";
+}
+
+function sumar($a, $b = 0) {
+    return $a + $b;
+}
+
+// Arrow functions (PHP 7.4+)
+$cuadrado = fn($x) => $x ** 2;
+?&gt;</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <h3>PDO y Base de Datos</h3>
+                    <pre><code class="language-php">&lt;?php
+$dsn = 'mysql:host=localhost;dbname=mibd';
+$usuario = 'root';
+$password = '';
+
+try {
+    $pdo = new PDO($dsn, $usuario, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE id = :id");
+    $stmt->execute(['id' => 1]);
+    $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+?&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="resources">
+            <div class="container">
+                <h2>📖 Recursos Adicionales</h2>
+
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Documentación Oficial</h4>
+                        <ul>
+                            <li><a href="https://www.php.net/manual/es/" target="_blank">PHP Documentation</a></li>
+                            <li><a href="https://getcomposer.org/doc/" target="_blank">Composer Documentation</a></li>
+                            <li><a href="https://phptherightway.com/" target="_blank">PHP The Right Way</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Herramientas</h4>
+                        <ul>
+                            <li>XAMPP</li>
+                            <li>Composer</li>
+                            <li>PHPUnit</li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Comunidades</h4>
+                        <ul>
+                            <li><a href="https://www.php.net/community/" target="_blank">PHP Community</a></li>
+                            <li>Stack Overflow - PHP</li>
+                            <li>Reddit r/PHP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>👨‍💻 Desarrollado por Isaac Esteban Haro Torres</h2>
+                <p class="contact-title">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+
+                <div class="contact-info">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>📱 WhatsApp: 098805517</p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                    <p>🌐 Portafolio: <a href="https://ieharo1.github.io/portafolio-isaac.haro/" target="_blank">ieharo1.github.io/portafolio-isaac.haro/</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

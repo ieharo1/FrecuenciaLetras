@@ -1,2 +1,0 @@
-frecuencialetras.CFrecuenciaLetras
-frecuencialetras.FrecuenciaLetras
